@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Layout from './components/Layout/Layout.jsx';
+import PlatformTools from './components/PlatformTools/PlatformTools.jsx';
+import Header from './components/Header/Header.jsx';
 
 class App extends Component {
   render() {
     return (
-      <div className="component">
-        <h1>{App.displayName || App.name}</h1>
-        <div>Props:</div>
-        {JSON.stringify(this.props)}
-      </div>
+      <Layout
+        header={() => <Header />}
+        content="content"
+        sidebar={() => <PlatformTools />}
+        footer="footer"
+      />
     );
   }
 }
