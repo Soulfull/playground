@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Layout from './components/Layout/Layout.jsx';
 import PlatformTools from './components/PlatformTools/PlatformTools.jsx';

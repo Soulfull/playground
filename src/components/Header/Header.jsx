@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import ToolsMenu from '../ToolsMenu/ToolsMenu.jsx';
+// inject data (pseudo connector)
+import { platformToolsStore } from '../../state/platformToolsState.js';
 
 class Header extends Component {
   render() {
@@ -6,7 +9,7 @@ class Header extends Component {
     return (
       <div className="header">
         <h2>Logo</h2>
-        <div id="sidebar-menu-container" />
+        <div id="sidebar-menu-container"><ToolsMenu store={ platformToolsStore } /></div>
       </div>
     );
   }
