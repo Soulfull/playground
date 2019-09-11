@@ -5,7 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import appService from './services/appService.js';
 
-console.log('add commit 1');
+console.log('add commit 1_checkout');
 
 ReactDOM.render(<App appState={appService.appState} />, document.getElementById('root'));
 
